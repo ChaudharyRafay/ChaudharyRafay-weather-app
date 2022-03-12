@@ -1,0 +1,31 @@
+first go to project folder in vs code
+write git status if no initialize than write git init
+node_module folder is big so we dont need to add/host this folder in github so we make file in main project folder name:(.gitignore) and simply type those folder names wo want to not host(using this the green color is finish for types folder in file)
+now file is untracked position so we need to tracked so write (git add .). indicates for whole project folder/files
+now write git commit -m "jo mrzi likho"(if not working simply run following commands
+(git config user.name "someone")
+(git config user.email "someone@someplace.com")
+now again run git commit -m "" now problem solve
+now goto github website login and create new repositery
+after creating repositery you can see link is generated like this(git remote add origin https://github.com/ChaudharyRafay/Chaudhary-Rafay.git) paste this link in vs code terminal and for check type (git remote) and see origin than its perfect
+now open gitbash as a administrator and type ls ~/.ssh if error comes than execute this command ssh-keygen -t rsa -b 4096 -C "rafaymuhammad245@gmail.com" and press 3 times enter your key is genertaed when key is generated again type ls~/.ssh you give output
+Now type eval $(ssh-agent -s) and you give agent pid..
+now enter  ssh-add ~/.ssh/id_rsa you will give a 4 5 line code copy it and go to github your profile and go to setting and add ssh gps key option click new ssh key and paste it now your secure connection is established btw your computer and github
+now for checking go to vs code terminal paste ssh -T git@github.com you will see successful msg
+now goto vs code trminal paste this code git push -u origin master and complete authentication and start uploading take time according to speed of internet 
+now go to repositery in github you will see files
+
+if you are still changes in some files in vs code and you want to modify the files in github simply type command (git add .) and now erite git commit -m "kuch bi" and press enter and again write git push and file are updated
+
+
+shrtcut method if you github acc already exist or you alreday upload project at leaast one time
+git init
+if node_module folder not upload make .gitignore file in root folder and type folder name(node_module)
+git add .
+git commit -m "kuch bi"
+now goto github create new repositery copy link eg git remote add origin "http..............."
+copy the link and paste it in vs code
+now write git push -u origin master
+now your files is uploaded
+
+
